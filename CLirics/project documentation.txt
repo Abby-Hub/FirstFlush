@@ -1,0 +1,24 @@
+S/w Env:
+   Java 8
+   Hibernate 4
+   Spring 4
+   Database : MySQL 5.x
+   Web Server : Tomcat 8.5
+
+Entity:
+  |- abstract Lirics
+  |- TeluguLirics extends Lirics
+  |- TamilLirics
+  |- EnglishLrics
+
+Dao:
+  |- LiricDao
+       |- insertLiric(Lirics liric)
+       |- getLiric(int sNo)
+       |- getLiric(String songName)
+       |- getLircsStartsWith(char letter)
+  |- TeluguLiricDaoImpl
+  |- TamilLiricDaoImpl
+  |- EnglishLiricDaoImpl
+  
+  
